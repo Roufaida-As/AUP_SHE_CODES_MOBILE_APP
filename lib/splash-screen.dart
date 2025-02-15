@@ -16,7 +16,7 @@ class _splashScreenState extends State<splashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 2), () {
       initialScreen();
     });
   }
@@ -88,7 +88,7 @@ class _splashScreenState extends State<splashScreen> {
 
 //A CORRIGER !!
 void initialScreen() {
-  Get.to(() =>  signUp(),
+  Get.to(() => signUp(),
       transition: Transition.fadeIn,
-      duration: const Duration(milliseconds: 5000));
+      duration: const Duration(milliseconds: 500));
 }
